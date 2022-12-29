@@ -1,0 +1,81 @@
+.sectionContainer {
+    min-height: 100vh;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    min-height: 100vh;
+    height: max-content;
+    padding: 0 var(--horizontal-padding);
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+}
+
+
+.content {
+    overflow: hidden;
+    max-width: 700px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+
+.content h2 {
+    font-size: 3.8em;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-transform: capitalize;
+    margin-bottom: 3em;
+}
+
+.imageContainer {
+    height: 500px;
+    position: relative;
+}
+
+.imageContainer img {
+    height: 100%;
+    width: auto;
+}
+
+.imageContainer:before {
+    position: absolute;
+    content: '';
+    width: 600px;
+    height: 900px;
+    left: -60%;
+    bottom: -55%;
+    border-radius: 350px;
+    background: linear-gradient(45deg, rgba(var(--color-primary-opacity), 0.05) 10%, transparent 70%);
+    transform: rotate(-125deg);
+}
+
+.mapContainer {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.map {
+    height: 950px;
+    max-height: 80vh;
+    position: relative;
+}
+
+.map svg {
+    height: 100%;
+}

@@ -7,6 +7,7 @@ const SelectServiceInput = ({ placeholder, options }) => {
     return (
         <div className={styles.selectServiceContainer}>
             <Select
+                instanceId={placeholder}
                 placeholder={placeholder}
                 value={selectedOption}
                 onChange={setSelectedOption}

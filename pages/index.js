@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 import HowCanWeHelpSection from '../components/Home/HowCanWeHelpSection'
 import MainSection from '../components/Home/MainSection'
 import MapSection from '../components/Home/MapSection'
@@ -20,6 +21,7 @@ export default function Home() {
         <WhyOurCustomerChooseUs />
         <MapSection />
       </main>
+      <Footer />
     </>
   )
 }

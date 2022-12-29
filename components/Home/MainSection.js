@@ -1,5 +1,5 @@
 import styles from '../../styles/MainSection.module.css'
-import { FaPhoneAlt, FaStripeS, FaRegArrowAltCircleDown } from 'react-icons/fa'
+import { FaPhoneAlt, FaRegArrowAltCircleDown } from 'react-icons/fa'
 
 import Link from 'next/link'
 import CopyToClipboardButton from '../CopyToClipboardButton'
@@ -15,18 +15,13 @@ const testsOptions = [
 ]
 
 import React from 'react'
+import Logo from '../Logo'
 
 const MainSection = () => {
     return (
         <section className={styles.container}>
             <nav>
-                <div className={styles.logo}>
-                    <FaStripeS />
-                    <div>
-                        <span>PARKY</span>
-                        <span>OLUTIONS</span>
-                    </div>
-                </div>
+                <Logo color="#000" />
                 <ul>
                     <li>
                         <Link href="/">Home</Link>

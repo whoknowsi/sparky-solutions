@@ -1,0 +1,102 @@
+.footerContainer {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    max-width: var(--max-width);
+    min-height: 600px;
+    width: 100%;
+    background-color: #000;
+    padding: 3.5em 1em;
+    padding-bottom: 0;
+    margin: 2em;
+    border-radius: 2em;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    padding: 0 var(--horizontal-padding);
+    margin-bottom: 1.5em;
+}
+
+.logoContainer>div {
+    font-size: 2em;
+}
+
+.title {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.dataContainer {
+    padding: 0 var(--horizontal-padding);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.dataContainer ul {
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.dataContainer ul li {
+    list-style: none;
+    margin-bottom: 1em;
+    color: #777;
+    width: 230px;
+}
+
+.copyrightContainer {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    margin-bottom: 1em;
+}
+
+.socialMedia ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.socialMedia ul li a:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.socialMedia ul li {
+    width: auto;
+    height: auto;
+}
+
+.socialMedia ul li a {
+    width: max-content;
+    height: max-content;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid #777;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+.socialMedia ul li svg {
+    width: 24px;
+    height: 24px;
+}

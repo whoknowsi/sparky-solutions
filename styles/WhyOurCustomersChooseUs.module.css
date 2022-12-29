@@ -2,6 +2,8 @@
     min-height: 100vh;
     padding: 1em var(--horizontal-padding);
     background-color: #fff;
+    display: flex;
+    justify-content: center;
 }
 
 .contentContainer {
@@ -12,6 +14,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-width: var(--max-width);
 }
 
 .container h2 {

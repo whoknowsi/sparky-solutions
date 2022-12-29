@@ -1,11 +1,9 @@
 .container {
-    background: linear-gradient(50deg, #FFFFFF 10%, rgba(var(--color-primary-opacity), 0.1) 100%);
     min-height: 100vh;
     height: max-content;
     padding: 0 4em;
     max-width: var(--max-width);
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .container nav {

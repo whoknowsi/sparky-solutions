@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import styles from '../../styles/RapidResponseSection.module.css'
+import styles from '../../styles/MapSection.module.css'
 import Argentine from '../SVG/argentine'
 import Spot from './Spot'
 
-const RapidResponseSection = () => {
+const MapSection = () => {
     return (
         <section className={styles.sectionContainer}>
             <div className={styles.container}>
@@ -33,4 +33,4 @@ const RapidResponseSection = () => {
     )
 }
 
-export default RapidResponseSection
+export default MapSection

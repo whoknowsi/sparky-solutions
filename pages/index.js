@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import HowCanWeHelpSection from '../components/Home/HowCanWeHelpSection'
 import MainSection from '../components/Home/MainSection'
-import RapidResponseSection from '../components/Home/RapidResponseSection'
+import MapSection from '../components/Home/MapSection'
 import WhyOurCustomerChooseUs from '../components/Home/WhyOurCustomerChooseUs'
 import styles from '../styles/Home.module.css'
 
@@ -18,7 +18,7 @@ export default function Home() {
         <MainSection />
         <HowCanWeHelpSection />
         <WhyOurCustomerChooseUs />
-        <RapidResponseSection />
+        <MapSection />
       </main>
     </>
   )

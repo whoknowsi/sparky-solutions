@@ -27,7 +27,7 @@ const MainSection = () => {
                         <Link href="/">Home</Link>
                     </li>
                     <li>
-                        <Link href="/about">Home</Link>
+                        <Link href="/about">About</Link>
                     </li>
                     <li>
                         <Link href="/services">Services</Link>

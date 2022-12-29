@@ -9,7 +9,7 @@
 .container {
     min-height: 100vh;
     height: max-content;
-    padding: 0 var(--horizontal-padding);
+    padding: 1em var(--horizontal-padding);
     max-width: var(--max-width);
     display: flex;
     align-items: center;
@@ -22,26 +22,27 @@
 
 .content {
     overflow: hidden;
-    max-width: 700px;
+    max-width: 50em;
     align-self: flex-end;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: auto;
+    height: 85vh;
 }
 
 
 .content h2 {
-    font-size: 3.8em;
+    font-size: 3em;
     font-weight: 600;
     line-height: 1.2em;
     text-transform: capitalize;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .imageContainer {
-    height: 500px;
+    height: 35em;
+    max-height: 60vh;
     position: relative;
 }
 
@@ -53,11 +54,13 @@
 .imageContainer:before {
     position: absolute;
     content: '';
-    width: 600px;
-    height: 900px;
-    left: -60%;
-    bottom: -55%;
-    border-radius: 350px;
+    width: 40em;
+    height: 60em;
+    max-height: 120vh;
+    max-width: 100vh;
+    right: 0%;
+    top: -30%;
+    border-radius: 20em;
     background: linear-gradient(45deg, rgba(var(--color-primary-opacity), 0.05) 10%, transparent 70%);
     transform: rotate(-125deg);
 }
@@ -71,11 +74,19 @@
 }
 
 .map {
-    height: 950px;
-    max-height: 80vh;
+    height: auto;
+    max-height: 90vh;
+    width: 30em;
     position: relative;
 }
 
 .map svg {
-    height: 100%;
+    height: auto;
+    max-height: 90vh;
+}
+
+@media (max-width: 1650px) {
+    .container {
+        font-size: .8em;
+    }
 }

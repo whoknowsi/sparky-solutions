@@ -18,7 +18,7 @@
 }
 
 .container h2 {
-    font-size: 3.8em;
+    font-size: 3em;
     font-weight: 600;
     line-height: 1.2em;
     text-transform: capitalize;
@@ -57,4 +57,19 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
+}
+
+@media (max-width: 1650px) {
+    .container {
+        font-size: .8em;
+    }
+
+    .reasonsContainer,
+    .reasonsColumn {
+        gap: 1.5em;
+    }
+
+    .detailsContainer {
+        padding-bottom: 5em;
+    }
 }

@@ -64,3 +64,10 @@
 .arrow.active {
     color: var(--color-primary)
 }
+
+@media (max-width: 1650px) {
+    .container {
+        width: 400px;
+        padding: .5em 1.5em;
+    }
+}

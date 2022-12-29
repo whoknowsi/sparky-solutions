@@ -8,7 +8,7 @@
 }
 
 .container {
-    padding: 0 var(--horizontal-padding);
+    padding: 1em var(--horizontal-padding);
     max-width: var(--max-width);
     height: 832px;
     width: 100%;
@@ -19,14 +19,15 @@
 
 
 .container .text {
-    max-width: 650px;
+    max-width: 43em;
 }
 
 .container h2 {
-    font-size: 3.8em;
+    font-size: 3em;
     font-weight: 600;
     line-height: 1.2em;
     text-transform: capitalize;
+    margin-bottom: 1em;
 }
 
 .container p {
@@ -47,7 +48,7 @@
 }
 
 .container .banner {
-    padding: 3em 2em;
+    padding: 2em 2em;
     overflow: hidden;
     position: relative;
 }
@@ -101,12 +102,20 @@
 
 .container .bannerContainer .bannerImageContainer {
     position: absolute;
-    right: 5%;
+    right: .25em;
     bottom: 0px;
-    height: 832px;
+    height: 52em;
+    max-height: 90vh;
 }
 
 .container .bannerContainer .bannerImageContainer img {
     height: 100%;
     width: auto;
+}
+
+@media (max-width: 1650px) {
+    .container {
+        height: 100vh;
+        font-size: .8em;
+    }
 }

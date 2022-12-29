@@ -1,0 +1,61 @@
+.container button {
+    background: #fff;
+    padding: .8em 1.5em;
+    border: none;
+    border-radius: 3rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 15px 15px 30px rgba(var(--color-primary-opacity), 0.2);
+}
+
+.container button div {
+    position: relative;
+}
+
+.container button svg {
+    font-size: 1.5em;
+}
+
+.container button div {
+    margin-left: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .3em;
+}
+
+.container button * {
+    user-select: none;
+    cursor: pointer;
+}
+
+.container .secondaryText {
+    color: var(--color-text-secondary);
+    font-size: .9em;
+}
+
+.container .primaryText {
+    font-size: 1.2em;
+}
+
+.container .hoverText {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 3em;
+    padding: .5em 1em;
+    width: max-content;
+    border-top-right-radius: 0px;
+}
+
+.container button:hover .hoverText {
+    visibility: visible;
+    opacity: 1;
+}

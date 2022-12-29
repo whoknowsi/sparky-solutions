@@ -1,0 +1,3 @@
+.selectServiceContainer {
+    width: calc(--max-width / 3);
+}

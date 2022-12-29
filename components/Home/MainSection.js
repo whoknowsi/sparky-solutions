@@ -75,7 +75,7 @@ const MainSection = () => {
             <article className={styles.presentationContainer}>
                 <div className={styles.presentation}>
                     <h2>
-                        <span><span className={styles.underlinedWord}>Professional</span> electrician services for repairs, installations, and maintenance.</span>
+                        <span><span className='underlinedWord'>Professional</span> electrician services for repairs, installations & maintenance.</span>
                     </h2>
                     <h3>
                         <span>We are here for you 24/7</span>

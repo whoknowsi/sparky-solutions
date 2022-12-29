@@ -1,0 +1,112 @@
+.sectionContainer {
+    min-height: 100vh;
+    height: max-content;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 0 var(--horizontal-padding);
+    max-width: var(--max-width);
+    height: 832px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.container .text {
+    max-width: 650px;
+}
+
+.container h2 {
+    font-size: 3.8em;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-transform: capitalize;
+}
+
+.container p {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-top: 1em;
+    color: #777
+}
+
+.container .bannerContainer {
+    width: 100%;
+    background-color: var(--color-primary);
+    border-radius: 2em;
+    position: relative;
+    margin-top: 1em;
+    box-shadow: 0px 40px 70px rgba(7, 121, 235, 0.075);
+}
+
+.container .banner {
+    padding: 3em 2em;
+    overflow: hidden;
+    position: relative;
+}
+
+.container .banner:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -150px;
+    width: 222px;
+    height: 222px;
+    background-color: #D9D9D933;
+    border-radius: 50%;
+}
+
+.container .banner:before {
+    content: '';
+    position: absolute;
+    left: 20%;
+    bottom: -170px;
+    width: 222px;
+    height: 222px;
+    background-color: #D9D9D933;
+    border-radius: 50%;
+}
+
+
+.container .banner .bannerText {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.container .banner .bannerText h3 {
+    color: #fff;
+    font-size: 2em;
+}
+
+.container .banner .bannerText div {
+    padding: 1em 3em;
+    width: max-content;
+    border-radius: 2em;
+    border: none;
+    background-color: #fff;
+    font-size: 1.2em;
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+.container .bannerContainer .bannerImageContainer {
+    position: absolute;
+    right: 5%;
+    bottom: 0px;
+    height: 832px;
+}
+
+.container .bannerContainer .bannerImageContainer img {
+    height: 100%;
+    width: auto;
+}

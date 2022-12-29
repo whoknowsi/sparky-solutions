@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import HowCanWeHelpSection from '../components/Home/HowCanWeHelpSection'
 import MainSection from '../components/Home/MainSection'
 import styles from '../styles/Home.module.css'
 
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <MainSection />
+        <HowCanWeHelpSection />
       </main>
     </>
   )

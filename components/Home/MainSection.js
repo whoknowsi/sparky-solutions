@@ -87,7 +87,7 @@ const MainSection = () => {
                     </p>
                 </div>
                 <div className={styles.presentationIlustration}>
-                    <Image src="/svg/presentation.svg" alt="presentation svg" width='530' height='539' />
+                    <Image src={`${process.env.BASE_PATH}/svg/presentation.svg`} alt="presentation svg" width='530' height='539' />
                 </div>
             </article>
         </section>

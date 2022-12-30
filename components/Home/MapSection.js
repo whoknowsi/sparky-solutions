@@ -13,7 +13,7 @@ const MapSection = () => {
                         Rapid <span className='underlinedWord'>Response</span> Installation, Repair & Maintenance Experts
                     </h2>
                     <div className={styles.imageContainer}>
-                        <Image src='/images/portrait-smiling-handyman-with-tools.png' width='2184' height='2684' alt='a handyman with tools' />
+                        <Image src={`${process.env.BASE_PATH}/images/portrait-smiling-handyman-with-tools.png`} width='2184' height='2684' alt='a handyman with tools' />
                     </div>
                 </div>
                 <div className={styles.mapContainer}>

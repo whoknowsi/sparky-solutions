@@ -36,7 +36,7 @@ const HowCanWeHelpSection = () => {
                         </div>
                     </div>
                     <div className={styles.bannerImageContainer}>
-                        <Image src='/images/portrait-worker-with-tools.png' width='2392' height='3328' alt='portrait of worker with tools' />
+                        <Image src={`${process.env.BASE_PATH}/images/portrait-worker-with-tools.png`} width='2392' height='3328' alt='portrait of worker with tools' />
                     </div>
                 </div>
             </div>

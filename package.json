@@ -4,9 +4,10 @@
   "homepage": "https://whoknowsi.github.io/sparky-solutions/",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "SET NODE_ENV=development&& next dev",
     "build": "next build",
     "export": "next export && copy .nojekyll out",
+    "static": "next build && next export && copy .nojekyll out", 
     "start": "next start",
     "lint": "next lint",
     "deploy": "gh-pages -d out -t true"

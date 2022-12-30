@@ -76,13 +76,14 @@
 .map {
     height: auto;
     max-height: 90vh;
-    width: 30em;
+    width: min-content;
     position: relative;
 }
 
-.map svg {
-    height: auto;
+.map>svg {
+    height: 90vh;
     max-height: 90vh;
+    width: auto;
 }
 
 @media (max-width: 1650px) {

@@ -1,14 +1,14 @@
 .sectionContainer {
-    min-height: 100vh;
-    height: max-content;
+    height: 100vh;
+    min-height: 45em;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2em 0;
 }
 
 .container {
-    min-height: 100vh;
-    height: max-content;
+    height: 100%;
     padding: 1em var(--horizontal-padding);
     max-width: var(--max-width);
     display: flex;
@@ -22,13 +22,14 @@
 
 .content {
     overflow: hidden;
-    max-width: 50em;
+    max-width: 42em;
     align-self: flex-end;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 85vh;
+    height: 100%;
+    flex: 1;
 }
 
 
@@ -41,8 +42,8 @@
 }
 
 .imageContainer {
-    height: 35em;
-    max-height: 60vh;
+    height: 38em;
+    max-height: 70%;
     position: relative;
 }
 
@@ -56,10 +57,8 @@
     content: '';
     width: 40em;
     height: 60em;
-    max-height: 120vh;
-    max-width: 100vh;
-    right: 0%;
-    top: -30%;
+    right: 20%;
+    top: -25%;
     border-radius: 20em;
     background: linear-gradient(45deg, rgba(var(--color-primary-opacity), 0.05) 10%, transparent 70%);
     transform: rotate(-125deg);
@@ -70,24 +69,57 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
+    height: 100%;
+    flex: 1;
 }
 
 .map {
-    height: auto;
-    max-height: 90vh;
+    height: 100%;
     width: min-content;
     position: relative;
 }
 
 .map>svg {
-    height: 90vh;
-    max-height: 90vh;
+    height: 100%;
     width: auto;
 }
 
 @media (max-width: 1650px) {
     .container {
         font-size: .8em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        padding: 1em 2em;
+    }
+
+    .content {
+        display: contents;
+        max-width: none;
+        height: min-content;
+        flex: none;
+    }
+
+    .content h2 {
+        font-size: 2em;
+        text-align: center;
+        max-width: 20em;
+    }
+
+    .imageContainer {
+        display: none;
+    }
+
+    .map {
+        width: auto;
+    }
+}
+
+@media (min-height: 1200px) {
+    .sectionContainer {
+        max-height: 1200px;
     }
 }

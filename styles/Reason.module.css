@@ -1,5 +1,5 @@
 .container {
-    width: 600px;
+    max-width: 600px;
     border-radius: 1em;
     background-color: #fff;
     display: flex;
@@ -65,9 +65,11 @@
     color: var(--color-primary)
 }
 
+@media (max-width: 768px) {}
+
 @media (max-width: 1650px) {
     .container {
-        width: 400px;
+        /* max-width: 500px; */
         padding: .5em 1.5em;
     }
 }

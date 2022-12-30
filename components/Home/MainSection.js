@@ -39,7 +39,7 @@ const MainSection = () => {
                         <Link href="/contact-us">Contact Us</Link>
                     </li>
                 </ul>
-                <div>
+                <div className={styles.cellPhone}>
                     <CopyToClipboardButton textToCopy={"01234567891"} primaryText={"0123 456 7891"} secondaryText={"Open 24/7"} Icon={FaPhoneAlt} />
                 </div>
             </nav>
@@ -77,12 +77,10 @@ const MainSection = () => {
                     </h3>
                     <p>
                         <span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            vitae nisl euismod, ultricies nisl sed, ultricies nisl. Sed
-                            vitae nisl euismod, ultricies nisl sed, ultricies nisl. Sed
-                            vitae nisl euismod, ultricies nisl sed, ultricies nisl. Sed
-                            vitae nisl euismod, ultricies nisl sed, ultricies nisl. Sed
-                            vitae nisl euismod, ultricies nisl sed, ultricies nisl.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus aliquet orci.
+                            In est risus, faucibus vel tortor eget, egestas efficitur purus. Pellentesque vehicula
+                            viverra volutpat. Nam malesuada fermentum mauris, nec vehicula lectus blandit eget.
+                            Sed malesuada neque et risus iaculis elementum. Ut ultrices lectus vel ante blandit sollicitudin.
                         </span>
                     </p>
                 </div>

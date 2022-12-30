@@ -1,6 +1,6 @@
 .container {
     min-height: 100vh;
-    padding: 1em var(--horizontal-padding);
+    padding: 2em var(--horizontal-padding);
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -57,6 +57,9 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
+    flex: 1;
+    max-width: max-content;
+    min-width: 325px;
 }
 
 @media (max-width: 1650px) {
@@ -71,5 +74,31 @@
 
     .detailsContainer {
         padding-bottom: 5em;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .container {
+        padding: 2em 2em;
+    }
+
+    .container h2 {
+        font-size: 2em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .introduction {
+        font-size: 1.2em;
+        padding: 1.5em 2em;
+    }
+}
+
+@media (min-height: 1200px) {
+    .container {
+        min-height: 0px;
     }
 }

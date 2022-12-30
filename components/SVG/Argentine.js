@@ -6,7 +6,7 @@ function Argentine(props) {
             xmlns="http://www.w3.org/2000/svg"
             xmlnsbx="https://boxy-svg.com"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            viewBox="0 -690.419 1055.158 1890.419"
+            viewBox="50 -690.419 1055.158 1890.419"
             {...props}
         >
             <defs>

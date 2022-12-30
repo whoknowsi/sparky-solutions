@@ -1,7 +1,8 @@
 .container {
     min-height: 100vh;
     height: max-content;
-    padding: 0 var(--horizontal-padding);
+    padding: 2em var(--horizontal-padding);
+    padding-top: 1em;
     max-width: var(--max-width);
     margin: 0 auto;
 }
@@ -92,10 +93,9 @@
 }
 
 .presentationContainer .presentation {
-    flex-grow: .6;
-    flex-shrink: 1;
     max-width: 100%;
-    width: 45em;
+    width: 37em;
+    flex: 1;
 }
 
 .presentationContainer .presentation h2 {
@@ -123,17 +123,16 @@
 }
 
 .presentationContainer .presentationIlustration {
-    flex-grow: .4;
-    flex-shrink: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    flex: 1;
 }
 
 .presentationContainer .presentationIlustration img {
-    height: 32em;
-    max-height: 50vh;
+    height: 37.5em;
+    max-height: 55vh;
     width: auto;
 }
 
@@ -156,5 +155,58 @@
     .container {
         margin-top: 0;
         font-size: .8em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .presentationContainer .presentation {
+        width: 100%;
+        min-width: 28em;
+    }
+
+    .presentationContainer .presentation h2 {
+        font-size: 2em;
+        text-align: center;
+        width: auto;
+    }
+
+    .presentationContainer .presentation {
+        width: auto;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 2em 2em;
+    }
+
+    .container nav {
+        padding-top: 0;
+    }
+
+    .container nav ul {
+        display: none;
+    }
+
+    .presentationContainer .presentation {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .container .cellPhone {
+        display: none;
+    }
+
+    .presentationContainer .presentationIlustration img {
+        width: 100%;
+    }
+}
+
+
+@media (min-height: 1200px) {
+    .container {
+        min-height: 0px;
     }
 }

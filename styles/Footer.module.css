@@ -54,7 +54,7 @@
     list-style: none;
     margin-bottom: 1em;
     color: #777;
-    width: 10em;
+    width: 9em;
 }
 
 .copyrightContainer {
@@ -107,4 +107,33 @@
     .container {
         font-size: .8em;
     }
+}
+
+@media (max-width: 1000px) {
+    .logoContainer {
+        padding: 0 2em;
+    }
+
+    .dataContainer {
+        padding: 0 2em;
+        gap: 5%
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+        margin-top: 2em
+    }
+
+    .logoContainer {
+        margin-bottom: 2em;
+    }
+
+    .dataContainer {
+        justify-content: center;
+        gap: 2em;
+        margin-bottom: 2em;
+    }
+
 }

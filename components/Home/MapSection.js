@@ -19,12 +19,12 @@ const MapSection = () => {
                 <div className={styles.mapContainer}>
                     <div className={styles.map}>
                         <Argentine fill={"rgba(15, 105, 201, .2)"} />
-                        <Spot name="Córdoba" color={"rgba(15, 105, 201, 1)"} left='30%' top='25%' />
-                        <Spot name="Entre Ríos" color={"rgba(15, 105, 201, 1)"} left='40%' top='29%' />
-                        <Spot name="Buenos Aires" color={"rgba(15, 105, 201, 1)"} left='45%' top='35%' />
-                        <Spot name="Mendoza" color={"rgba(15, 105, 201, 1)"} left='17%' top='30%' />
-                        <Spot name="Santa Cruz" color={"rgba(15, 105, 201, 1)"} left='17%' bottom='22%' />
-                        <Spot name="Salta" color={"rgba(15, 105, 201, 1)"} left='25%' top='3%' />
+                        <Spot name="Córdoba" color={"rgba(15, 105, 201, 1)"} left='28%' top='25%' />
+                        <Spot name="Entre Ríos" color={"rgba(15, 105, 201, 1)"} left='38%' top='29%' />
+                        <Spot name="Buenos Aires" color={"rgba(15, 105, 201, 1)"} left='43%' top='35%' />
+                        <Spot name="Mendoza" color={"rgba(15, 105, 201, 1)"} left='15%' top='30%' />
+                        <Spot name="Santa Cruz" color={"rgba(15, 105, 201, 1)"} left='12%' bottom='22%' />
+                        <Spot name="Salta" color={"rgba(15, 105, 201, 1)"} left='23%' top='3%' />
                     </div>
                 </div>
 

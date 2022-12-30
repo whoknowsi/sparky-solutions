@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from "react"
+import React, { useState, useRef } from "react"
 import { CopyToClipboard } from "react-copy-to-clipboard"
-import styles from '../styles/CopyToClipboardButton.module.css'
+import styles from '../styles/components/CopyToClipboardButton.module.css'
 
 const CopyToClipboardButton = ({ textToCopy, primaryText, secondaryText, Icon }) => {
     const hoverText = useRef(null)

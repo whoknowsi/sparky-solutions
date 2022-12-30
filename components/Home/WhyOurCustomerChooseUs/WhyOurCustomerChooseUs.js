@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/WhyOurCustomersChooseUs.module.css'
+import styles from '../../../styles/components/Home/WhyOurCustomerChooseUs/WhyOurCustomersChooseUs.module.css'
 import Reason from './Reason'
 import { FaBolt, FaScrewdriver, FaRegBuilding, FaBusinessTime, FaShuttleVan, FaStar } from 'react-icons/fa'
 

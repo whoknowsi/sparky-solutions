@@ -1,72 +1,13 @@
-import styles from '../../styles/MainSection.module.css'
-import { FaPhoneAlt, FaRegArrowAltCircleDown } from 'react-icons/fa'
-
-import Link from 'next/link'
-import CopyToClipboardButton from '../CopyToClipboardButton'
-import SelectServiceInput from '../SelectServiceInput'
-
+import styles from '../../styles/components/Home/MainSection.module.css'
+import SelectServices from '../SelectServices/SelectServices'
 import Image from 'next/image'
 
-const testsOptions = [
-    { value: 'first option', label: 'First option' },
-    { value: 'second option', label: 'Second option' },
-    { value: 'third option', label: 'Third option' },
-    { value: 'fourth option', label: 'Fourth option' },
-]
-
 import React from 'react'
-import Logo from '../Logo'
 
 const MainSection = () => {
     return (
         <section className={styles.container}>
-            <nav>
-                <Logo color="#000" />
-                <ul>
-                    <li>
-                        <Link href="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link href="/services">Services</Link>
-                        <button>
-                            <FaRegArrowAltCircleDown />
-                        </button>
-                    </li>
-                    <li>
-                        <Link href="/contact-us">Contact Us</Link>
-                    </li>
-                </ul>
-                <div className={styles.cellPhone}>
-                    <CopyToClipboardButton textToCopy={"01234567891"} primaryText={"0123 456 7891"} secondaryText={"Open 24/7"} Icon={FaPhoneAlt} />
-                </div>
-            </nav>
-            <article className={styles.selectServiceContainer}>
-                <h2>
-                    <span>Need an electrician?</span>
-                </h2>
-                <div>
-                    <ul>
-                        <li>
-                            <SelectServiceInput
-                                placeholder="Electrical repairs"
-                                options={testsOptions} />
-                        </li>
-                        <li>
-                            <SelectServiceInput
-                                placeholder="Electrical installations"
-                                options={testsOptions} />
-                        </li>
-                        <li>
-                            <SelectServiceInput
-                                placeholder="Electrical maintenance"
-                                options={testsOptions} />
-                        </li>
-                    </ul>
-                </div>
-            </article>
+            <SelectServices />
             <article className={styles.presentationContainer}>
                 <div className={styles.presentation}>
                     <h2>

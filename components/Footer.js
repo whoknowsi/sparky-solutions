@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/Footer.module.css'
+import styles from '../styles/components/Footer.module.css'
 import Logo from './Logo'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import Link from 'next/link'

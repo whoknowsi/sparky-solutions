@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/Logo.module.css'
+import styles from '../styles/components/Logo.module.css'
 import { FaStripeS } from 'react-icons/fa'
 
 const Logo = ({ color }) => {

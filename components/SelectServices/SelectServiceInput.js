@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from '../styles/SelectServiceInput.module.css'
+import styles from '../../styles/components/SelectServices/SelectServiceInput.module.css'
 import Select from 'react-select'
 
 const SelectServiceInput = ({ placeholder, options }) => {

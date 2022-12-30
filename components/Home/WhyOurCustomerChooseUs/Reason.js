@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from '../../styles/Reason.module.css'
+import styles from '../../../styles/components/Home/WhyOurCustomerChooseUs/Reason.module.css'
 import { FaAngleDown } from 'react-icons/fa'
 
 const Reason = ({ Icon, title, description }) => {

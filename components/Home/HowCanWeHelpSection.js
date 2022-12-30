@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import styles from '../../styles/HowCanWeHelpSection.module.css'
+import styles from '../../styles/components/Home/HowCanWeHelpSection.module.css'
 
 const HowCanWeHelpSection = () => {
     return (

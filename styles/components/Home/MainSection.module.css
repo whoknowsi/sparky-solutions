@@ -7,80 +7,8 @@
     margin: 0 auto;
 }
 
-.container nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2em 0em;
-}
-
 .container svg {
     color: var(--color-primary);
-}
-
-.container nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1em;
-}
-
-.container nav ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.container nav ul li button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    border-radius: 50%;
-    margin-left: .3em;
-    color: var(--color-primary);
-    height: 1.2em;
-    width: 1.2em;
-}
-
-.container nav ul li button:hover {
-    background-color: var(--color-primary);
-    color: #FFF;
-}
-
-.container nav ul li button svg {
-    color: inherit;
-    font-size: 1.2em;
-}
-
-.selectServiceContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 2em;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 1em;
-    padding: 2em 2em;
-}
-
-.selectServiceContainer>div {
-    width: 100%;
-}
-
-.selectServiceContainer ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-}
-
-.selectServiceContainer li {
-    flex-grow: 1;
-    list-style: none;
 }
 
 .presentationContainer {
@@ -145,7 +73,7 @@
     max-width: 100vh;
     height: 85em;
     max-height: 140vh;
-    background: linear-gradient(356.45deg, rgba(var(--color-primary-opacity), 0.2) 5%, #FFFFFF 65%);
+    background: linear-gradient(356.45deg, rgba(var(--color-primary-opacity), 0.15) 0%, transparent 50%);
     transform: rotate(48deg);
     border-radius: 50em;
     z-index: -1;
@@ -176,27 +104,14 @@
 
 }
 
-
 @media (max-width: 768px) {
     .container {
         padding: 2em 2em;
     }
 
-    .container nav {
-        padding-top: 0;
-    }
-
-    .container nav ul {
-        display: none;
-    }
-
     .presentationContainer .presentation {
         min-width: 100%;
         width: 100%;
-    }
-
-    .container .cellPhone {
-        display: none;
     }
 
     .presentationContainer .presentationIlustration img {

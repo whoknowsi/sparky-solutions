@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import styles from '../../styles/MapSection.module.css'
+import styles from '../../styles/components/MapSection/MapSection.module.css'
 import Argentine from '../SVG/argentine'
 import Spot from './Spot'
 

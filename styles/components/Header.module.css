@@ -1,0 +1,74 @@
+.container {
+    padding: 2em var(--horizontal-padding);
+    padding-top: 3em;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container nav svg {
+    color: var(--color-primary);
+}
+
+.container nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+
+.container nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.container nav ul li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: .3em;
+    color: var(--color-primary);
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.container nav ul li button:hover {
+    background-color: var(--color-primary);
+    color: #FFF;
+}
+
+.container nav ul li button svg {
+    color: inherit;
+    font-size: 1.2em;
+}
+
+@media (max-width: 1650px) {
+    .container {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 2em;
+        padding-bottom: 1em;
+    }
+
+    .container nav ul {
+        display: none;
+    }
+
+    .container .cellPhone {
+        display: none;
+    }
+
+}

@@ -3,6 +3,18 @@ import React from 'react'
 import styles from '../../styles/components/MapSection/MapSection.module.css'
 import Argentine from '../SVG/argentine'
 import Spot from './Spot'
+import ImageWithBgBooble from '../ImageWithBubbleBg'
+
+const bubbleData = {
+    width: '160%',
+    height: '160%',
+    top: '-10%',
+    right: '10%',
+    borderRadius: '50%',
+    background: 'linear-gradient(23deg, rgba(var(--color-primary-opacity), 0.05) 10%, transparent 50%)',
+    transform: 'rotate(223deg)'
+}
+
 
 const MapSection = () => {
     return (
@@ -12,9 +24,10 @@ const MapSection = () => {
                     <h2>
                         Rapid <span className='underlinedWord'>Response</span> Installation, Repair & Maintenance Experts
                     </h2>
-                    <div className={styles.imageContainer}>
+                    <ImageWithBgBooble className={styles.imageContainer} src={`${process.env.BASE_PATH}/images/portrait-smiling-handyman-with-tools.png`} imageHeight={'40em'} {...bubbleData} />
+                    {/* <div className={styles.imageContainer}>
                         <Image src={`${process.env.BASE_PATH}/images/portrait-smiling-handyman-with-tools.png`} width='2184' height='2684' alt='a handyman with tools' />
-                    </div>
+                    </div> */}
                 </div>
                 <div className={styles.mapContainer}>
                     <div className={styles.map}>

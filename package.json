@@ -7,7 +7,7 @@
     "dev": "SET NODE_ENV=development&& next dev",
     "build": "next build",
     "export": "next export && copy .nojekyll out",
-    "static": "next build && next export && copy .nojekyll out", 
+    "static": "next build && next export && copy .nojekyll out",
     "start": "next start",
     "lint": "next lint",
     "deploy": "gh-pages -d out -t true"
@@ -21,6 +21,10 @@
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
-    "react-select": "^5.7.0"
+    "react-select": "^5.7.0",
+    "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.7"
   }
 }

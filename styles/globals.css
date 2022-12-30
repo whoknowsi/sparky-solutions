@@ -31,6 +31,7 @@ body main {
 span.underlinedWord {
   position: relative;
   color: var(--color-primary);
+  white-space: nowrap;
 }
 
 span.underlinedWord:after {

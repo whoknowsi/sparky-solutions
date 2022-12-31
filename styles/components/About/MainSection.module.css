@@ -22,6 +22,8 @@
     flex: 1;
     min-width: 38em;
     align-self: flex-start;
+    display: flex;
+    flex-direction: column;
 }
 
 .text p {
@@ -38,11 +40,24 @@
     line-height: 1.2em;
     text-transform: capitalize;
     margin-bottom: .5em;
+    max-width: 15em;
 }
 
 @media (max-width: 1650px) {
     .container {
         font-size: .8em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        font-size: .8em;
+    }
+
+    .text h2 {
+        text-align: center;
+        font-size: 2em;
+        align-self: center;
     }
 }
 
@@ -57,9 +72,6 @@
         flex: auto;
     }
 
-    .text h2 {
-        text-align: center;
-    }
 }
 
 @media (min-height: 1200px) {

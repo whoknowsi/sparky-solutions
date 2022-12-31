@@ -127,6 +127,10 @@
         padding: 2em 2em;
     }
 
+    .container h2 {
+        margin-bottom: 1em;
+    }
+
     .contactInfo {
         width: 100%;
         flex: 1;

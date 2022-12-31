@@ -7,15 +7,11 @@
     margin: 0 auto;
 }
 
-.container svg {
-    color: var(--color-primary);
-}
-
 .presentationContainer {
     max-width: var(--max-width);
     display: flex;
     justify-content: center;
-    margin-top: 3em;
+    margin-top: 2em;
     gap: 1em;
     flex-wrap: wrap;
 }
@@ -106,7 +102,7 @@
 
 @media (max-width: 768px) {
     .container {
-        padding: 2em 2em;
+        padding: 1em 2em;
     }
 
     .presentationContainer .presentation {

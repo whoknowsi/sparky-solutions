@@ -35,6 +35,7 @@ const description = `We offer 3 different types of services throughout Argentina
 const OurServicesSection = () => {
     return (
         <SectionWithSpoilItems
+            id='services'
             title={<>Our <span key={'underlinedWord'} className="underlinedWord">Services</span></>}
             description={description}
             items={services}

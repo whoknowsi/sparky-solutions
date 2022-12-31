@@ -7,6 +7,11 @@
   --horizontal-padding: 6em;
 }
 
+html {
+  scroll-behavior: smooth !important;
+  ;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -21,7 +26,6 @@ a {
 body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(50deg, #FFFFFF 20%, rgba(var(--color-primary-opacity), 0.05) 100%);
-
 }
 
 body main {

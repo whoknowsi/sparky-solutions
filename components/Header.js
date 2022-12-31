@@ -24,19 +24,19 @@ const Header = () => {
                 </div>
                 <ul>
                     <li className={router.pathname == "/" ? styles.active : ""}>
-                        <Link href="/">Home</Link>
+                        <Link onClick={() => setOpen(false)} href="/">Home</Link>
                     </li>
                     <li className={router.pathname == "/about" ? styles.active : ""}>
-                        <Link href="/about">About</Link>
+                        <Link onClick={() => setOpen(false)} href="/about">About</Link>
                     </li>
                     <li>
-                        <Link href="/#">Services</Link>
+                        <Link onClick={() => setOpen(false)} href="/about#services">Services</Link>
                         <button>
                             <FaRegArrowAltCircleDown />
                         </button>
                     </li>
                     <li className={router.pathname == "/contact-us" ? styles.active : ""}>
-                        <Link href="/contact-us">Contact Us</Link>
+                        <Link onClick={() => setOpen(false)} href="/contact-us">Contact Us</Link>
                     </li>
                 </ul>
                 <div className={styles.cellPhone}>

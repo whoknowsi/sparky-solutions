@@ -2,9 +2,9 @@ import React from 'react'
 import styles from '../../styles/components/SectionWithSpoilItems/SectionWithSpoilItems.module.css'
 import Item from './Item'
 
-const SectionWithSpoilItems = ({ title, description, items, columns }) => {
+const SectionWithSpoilItems = ({ id, title, description, items, columns }) => {
     return (
-        <section className={styles.container}>
+        <section id={id ? id : ""} className={styles.container}>
             <div className={styles.contentContainer}>
                 <h2>
                     {title}

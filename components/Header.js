@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import React from 'react'
-import { FaRegArrowAltCircleDown, FaPhoneAlt } from 'react-icons/fa'
+import React, { useState } from 'react'
+import { FaRegArrowAltCircleDown, FaPhoneAlt, FaBars } from 'react-icons/fa'
 import CopyToClipboardButton from './CopyToClipboardButton'
 import Logo from './Logo'
 import styles from '../styles/components/Header.module.css'
@@ -8,11 +8,20 @@ import { useRouter } from 'next/router'
 
 const Header = () => {
     const router = useRouter()
+    const [open, setOpen] = useState(false)
 
     return (
-        <header className={styles.container}>
-            <nav >
-                <Logo color="#000" />
+        <header className={`${styles.container} ${open ? styles.open : ''}`}>
+            <div className={styles.background} onClick={() => setOpen(false)}></div>
+            <nav>
+                <div className={styles.alwaysOnTop}>
+                    <Logo color="#000" />
+                    <div className={styles.menuIcon}>
+                        <button onClick={() => setOpen(!open)}>
+                            <FaBars />
+                        </button>
+                    </div>
+                </div>
                 <ul>
                     <li className={router.pathname == "/" ? styles.active : ""}>
                         <Link href="/">Home</Link>
@@ -20,8 +29,8 @@ const Header = () => {
                     <li className={router.pathname == "/about" ? styles.active : ""}>
                         <Link href="/about">About</Link>
                     </li>
-                    <li className={router.pathname == "/services" ? styles.active : ""}>
-                        <Link href="/services">Services</Link>
+                    <li>
+                        <Link href="/#">Services</Link>
                         <button>
                             <FaRegArrowAltCircleDown />
                         </button>

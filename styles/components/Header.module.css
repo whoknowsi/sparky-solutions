@@ -1,14 +1,24 @@
 .container {
-    padding: 2em var(--horizontal-padding);
-    padding-top: 3em;
     max-width: var(--max-width);
     margin: 0 auto;
+}
+
+.container .background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(3px);
+    z-index: 555;
+    display: none;
 }
 
 .container nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2em var(--horizontal-padding);
+    padding-top: 3em;
 }
 
 .container nav svg {
@@ -55,6 +65,28 @@
     font-size: 1.2em;
 }
 
+.container nav .menuIcon {
+    display: none;
+}
+
+.container nav .menuIcon button {
+    background: none;
+    border: none;
+    width: 2em;
+    height: 2em;
+}
+
+.container nav .menuIcon svg {
+    width: 2em;
+    height: 2em;
+}
+
+.container .alwaysOnTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 @media (max-width: 1650px) {
     .container {
         font-size: .8em;
@@ -62,9 +94,12 @@
 }
 
 @media (max-width: 768px) {
-    .container {
+    .container nav {
         padding: 2em;
-        padding-bottom: 1em;
+    }
+
+    .container .alwaysOnTop {
+        width: 100%;
     }
 
     .container nav ul {
@@ -75,4 +110,39 @@
         display: none;
     }
 
+    .container nav .menuIcon {
+        display: block;
+    }
+
+    .container.open nav {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #f0f7fe;
+        z-index: 9999;
+        padding-bottom: 2em;
+    }
+
+    .container.open nav ul {
+        align-self: flex-end;
+        position: absolute;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-end;
+        right: 0;
+        top: 5em;
+        font-size: 1.25em;
+        background-color: #f0f7fe;
+        padding: 2em;
+        padding-top: 1em;
+        border-bottom-left-radius: 2em;
+    }
+
+    .container.open .background {
+        display: block;
+    }
+
+    .container.open nav li:nth-child(3) button {
+        display: none;
+    }
 }

@@ -10,7 +10,8 @@
     "static": "next build && next export && copy .nojekyll out",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d out -t true"
+    "deploy": "gh-pages -d out -t true",
+    "deploy:full": "next build && next export && copy .nojekyll out && gh-pages -d out -t true"
   },
   "dependencies": {
     "@next/font": "13.1.1",

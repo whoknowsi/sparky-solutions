@@ -15,18 +15,18 @@ const Footer = () => {
                     <div>
                         <label className={styles.title}>Services</label>
                         <ul>
-                            <li><Link href='/repairs'>Repairs</Link></li>
-                            <li><Link href='/intallations'>Intallations</Link></li>
-                            <li><Link href='/maintenance'>Maintenance</Link></li>
+                            <li><Link href='/#'>Repairs</Link></li>
+                            <li><Link href='/#'>Intallations</Link></li>
+                            <li><Link href='/#'>Maintenance</Link></li>
                         </ul>
                     </div>
                     <div>
                         <label className={styles.title}>Company</label>
                         <ul>
                             <li><Link href='/about'>About</Link></li>
-                            <li><Link href='/contact'>Contact</Link></li>
-                            <li><Link href='/privacy-policy'>Privacy Policy</Link></li>
-                            <li><Link href='/terms-and-conditions'>Terms & Conditions</Link></li>
+                            <li><Link href='/contact-us'>Contact Us</Link></li>
+                            <li><Link href='/#'>Privacy Policy</Link></li>
+                            <li><Link href='/#'>Terms & Conditions</Link></li>
                         </ul>
                     </div>
                     <div>

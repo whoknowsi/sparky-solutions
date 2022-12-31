@@ -4,26 +4,38 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    gap: 2em;
-    padding: 2em 0;
-    margin: 3em auto;
+    gap: 1.5em;
+    padding: 7em 1em;
+    background-color: #fff;
 }
 
 .iconContainer {
-    padding: 1em;
-    border: 1px solid var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
+    background-color: #fff;
+    color: var(--color-primary);
+    box-shadow: 0px 40px 60px rgba(4, 107, 218, 0.1);
+}
+
+.iconContainer:hover {
+    border: 1px solid var(--color-primary);
 }
 
 .container h2 {
     font-size: 1.5em;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 .pill {
     padding: 1em 2em;
-    background: linear-gradient(120deg, rgba(var(--color-primary-opacity, 1)) 20%, rgba(var(--color-primary-opacity, .5)) 90%);
+    background: linear-gradient(120deg, rgba(var(--color-primary-opacity), 1) 20%, rgba(var(--color-primary-opacity), 0.9) 90%);
     box-shadow: 0px 25px 30px rgba(3, 104, 212, 0.2);
     color: #fff;
     border-radius: 2em;
+    font-weight: 600;
 }

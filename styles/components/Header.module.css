@@ -18,14 +18,14 @@
 .container nav ul {
     display: flex;
     list-style: none;
-    gap: 1em;
+    gap: 2em;
 }
 
 .container nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 400;
 }
 

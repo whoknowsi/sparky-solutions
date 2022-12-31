@@ -1,11 +1,16 @@
-import Image from 'next/image'
 import React from 'react'
 import styles from '../../styles/components/MapSection/MapSection.module.css'
 import Argentine from '../SVG/argentine'
 import Spot from './Spot'
 import ImageWithBgBooble from '../ImageWithBubbleBg'
 
-const bubbleData = {
+const containerStyle = {
+    minHeight: '30em',
+    maxHeight: '42.5em',
+    height: '70vh'
+}
+
+const bubbleStyle = {
     width: '160%',
     height: '160%',
     top: '-10%',
@@ -24,10 +29,12 @@ const MapSection = () => {
                     <h2>
                         Rapid <span className='underlinedWord'>Response</span> Installation, Repair & Maintenance Experts
                     </h2>
-                    <ImageWithBgBooble className={styles.imageContainer} src={`${process.env.BASE_PATH}/images/portrait-smiling-handyman-with-tools.png`} imageHeight={'40em'} {...bubbleData} />
-                    {/* <div className={styles.imageContainer}>
-                        <Image src={`${process.env.BASE_PATH}/images/portrait-smiling-handyman-with-tools.png`} width='2184' height='2684' alt='a handyman with tools' />
-                    </div> */}
+                    <ImageWithBgBooble
+                        className={styles.imageContainer}
+                        src={`${process.env.BASE_PATH}/images/portrait-smiling-handyman-with-tools.png`}
+                        containerStyle={containerStyle}
+                        bubbleStyle={bubbleStyle}
+                    />
                 </div>
                 <div className={styles.mapContainer}>
                     <div className={styles.map}>

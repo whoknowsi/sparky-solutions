@@ -11,7 +11,7 @@
 
 .about {
     display: flex;
-    align-items: stretch;
+    align-items: flex-end;
     justify-content: space-between;
     flex-wrap: wrap;
     flex: 1;
@@ -19,13 +19,17 @@
 }
 
 .text {
-    flex: .7;
+    flex: 1;
+    min-width: 38em;
+    align-self: flex-start;
 }
 
 .text p {
     margin-bottom: 1.2em;
     color: #777;
     font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.3em;
 }
 
 .text h2 {
@@ -33,40 +37,7 @@
     font-weight: 600;
     line-height: 1.2em;
     text-transform: capitalize;
-    margin-bottom: 1em;
-}
-
-.imageContainer {
-    position: relative;
-}
-
-
-.imageWithPseudoContainer {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    position: relative;
-    height: calc(100vh - 8.5em - 13em);
-    flex: 1;
-}
-
-.imageWithPseudoContainer img {
-    height: 100%;
-    width: auto;
-    align-self: flex-end;
-    z-index: 1;
-    position: relative;
-}
-
-.imageContainer:before {
-    content: '';
-    position: absolute;
-    width: 150%;
-    height: 95%;
-    left: -25%;
-    bottom: 0;
-    border-radius: 50% 50% 0 0;
-    background: linear-gradient(180deg, rgba(var(--color-primary-opacity), 0.05) 10%, transparent 100%);
+    margin-bottom: .5em;
 }
 
 @media (max-width: 1650px) {
@@ -78,6 +49,16 @@
 @media (max-width: 768px) {
     .container {
         padding: 1em 2em;
+        padding-bottom: 0;
+    }
+
+    .text {
+        min-width: 0px;
+        flex: auto;
+    }
+
+    .text h2 {
+        text-align: center;
     }
 }
 

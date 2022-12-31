@@ -1,0 +1,75 @@
+.container {
+    max-width: 600px;
+    border-radius: 1em;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0px 50px 60px rgba(0, 115, 236, 0.04);
+    cursor: pointer;
+    padding: 1em 1.5em;
+    position: relative;
+    border: 1px transparent solid;
+    height: min-content;
+}
+
+.container.active {
+    border: 1px var(--color-primary) solid;
+}
+
+.content {
+    flex-grow: 1;
+    padding-left: 1.5em;
+    padding-top: calc(1.5em - 0.6em);
+}
+
+.content h3 {
+    font-size: 1.2em;
+}
+
+.content .spoiler {
+    visibility: hidden;
+    height: 0px;
+    color: rgba(29, 36, 46, 0.6);
+    font-size: 1.05em;
+}
+
+.content .spoiler.active {
+    visibility: visible;
+    height: auto;
+    padding: 1em 0;
+}
+
+.icon {
+    width: 3em;
+    height: 3em;
+    background: linear-gradient(125.97deg, var(--color-primary) 10%, rgba(var(--color-primary-opacity), .8) 90%);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 50px rgba(3, 105, 214, 0.1);
+    flex-grow: initial;
+    flex-shrink: 0;
+}
+
+.arrow {
+    flex-grow: initial;
+    font-size: 1.5em;
+    height: 1em;
+    width: 1em;
+    padding-top: calc(1.5em - 1em);
+}
+
+.arrow.active {
+    color: var(--color-primary)
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 1650px) {
+    .container {
+        /* max-width: 500px; */
+        padding: .5em 1.5em;
+    }
+}

@@ -1,6 +1,6 @@
 :root {
   --color-primary: #1785f9;
-  --color-primary-opacity: 15, 105, 201;
+  --color-primary-opacity: 23, 133, 249;
   --color-text-primary: #000000;
   --color-text-secondary: #bbb;
   --max-width: 1920px;
@@ -20,7 +20,7 @@ a {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(50deg, #FFFFFF 10%, rgba(var(--color-primary-opacity), 0.1) 100%);
+  background: linear-gradient(50deg, #FFFFFF 20%, rgba(var(--color-primary-opacity), 0.05) 100%);
 
 }
 
@@ -32,6 +32,7 @@ span.underlinedWord {
   position: relative;
   color: var(--color-primary);
   white-space: nowrap;
+  font-size: min(11vw, 1em);
 }
 
 span.underlinedWord:after {

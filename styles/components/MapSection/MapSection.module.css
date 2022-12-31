@@ -98,13 +98,14 @@
     .container {
         flex-direction: column;
         padding: 1em 2em;
+        flex-wrap: nowrap;
     }
 
     .content {
-        display: contents;
-        max-width: none;
+        width: 100%;
         height: min-content;
         flex: none;
+        max-width: none;
     }
 
     .content h2 {

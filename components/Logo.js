@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from '../styles/components/Logo.module.css'
 import { FaStripeS } from 'react-icons/fa'
+import Link from 'next/link'
 
 const Logo = ({ color }) => {
     return (
-        <div className={styles.container}>
+        <Link href='/' className={styles.container}>
             <div className={styles.logo}>
                 <FaStripeS />
                 <div style={{
@@ -14,7 +15,7 @@ const Logo = ({ color }) => {
                     <span>OLUTIONS</span>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

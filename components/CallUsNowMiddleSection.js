@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from '../../styles/components/About/CallUsSection.module.css'
+import styles from '../styles/components/CallUsMiddleSection.module.css'
 import { FaPhoneAlt } from 'react-icons/fa'
 
-const CallUsSection = () => {
+const CallUseMiddleSection = () => {
     return (
         <section className={styles.container}>
             <div className={styles.iconContainer}>
@@ -14,4 +14,4 @@ const CallUsSection = () => {
     )
 }
 
-export default CallUsSection
+export default CallUseMiddleSection

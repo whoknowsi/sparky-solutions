@@ -77,6 +77,7 @@
 
 @media (max-width: 1650px) {
     .container {
+        min-height: calc(100vh - 9.5em);
         margin-top: 0;
         font-size: .8em;
     }
@@ -102,6 +103,7 @@
 
 @media (max-width: 768px) {
     .container {
+        min-height: calc(100vh - 6.4em);
         padding: 1em 2em;
     }
 

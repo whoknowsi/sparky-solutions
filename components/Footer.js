@@ -39,7 +39,7 @@ const Footer = () => {
                         <label className={styles.title}>Follow Us:</label>
                         <ul>
                             <li><a href='https://github.com/whoknowsi/' target="_blank" rel="noreferrer"><FaGithub /></a></li>
-                            <li><a href='https://www.linkedin.com/in/carlos-jofre-830273210/' target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
+                            <li><a href='https://www.linkedin.com/in/carlos-german-jofre/' target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
                         </ul>
                     </div>
                 </div>
